@@ -1,15 +1,23 @@
 package main
 
-import "fmt"
+//Two ways to import packages
+//import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Funcionou!!!")
+	//fmt.Println("Funcionou!!!")
+	fmt.Print("Primeiro ")
+	fmt.Print("Programa!")
 }
 
-//para executar arquivo Go usando o plugin Code Runner do VS Code
-//ctrl + alt + n
-//ou via linha de comando:
-//go run "/home/bruno/Documentos/go/fundamentos/primeiro/primeiro.go"
+/*
+In order to execute a Go program using the Code Runner plugin from VS code:
+ctrl + alt + n
+or from command line:
+go run "/home/bruno/Documentos/go/fundamentos/primeiro/primeiro.go"
 
-//para parar a execucao de algum programa
-//ctrl + alt + m
+To stop execution of a program:
+ctrl + alt + m
+*/
