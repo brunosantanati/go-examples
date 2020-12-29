@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
+	"strconv"
 	"time"
 )
 
@@ -33,9 +35,42 @@ func main() {
 	for {
 		// laço infinito
 		fmt.Println("Para sempre...")
-		//time.Sleep(time.Second) // Imprimir de 1 em 1 segundo
-		time.Sleep(time.Second * 5) // Imprimir a cada 5 segundos
+		time.Sleep(time.Second) // Imprimir de 1 em 1 segundo
+		//time.Sleep(time.Second * 5) // Imprimir a cada 5 segundos
+
+		// Break Statement in Golang
+		//https://www.golearningsource.com/fundamentals/break-statement-in-golang/
+		r := rand.New(rand.NewSource(time.Now().UnixNano()))
+		numeroAleatorio := r.Intn(4)
+		if numeroAleatorio == 3 {
+			fmt.Println("Não era para sempre...")
+			break // Sai do for
+		}
 	}
+
+	// Usar uma label para o loop
+	fmt.Println("\n5) ####################################")
+	// label for outer loop
+outer:
+	for a := 0; a < 3; a++ {
+		fmt.Print(strconv.Itoa(a) + " ")
+		if a == 1 {
+			fmt.Println("break outer called")
+			// labelled break statement
+			break outer
+		}
+		// label for inner loop
+	inner:
+		for b := 0; b < 3; b++ {
+			fmt.Print(strconv.Itoa(b) + " ")
+			if b == 1 {
+				fmt.Println("break inner called")
+				// labelled break statement
+				break inner
+			}
+		}
+	}
+	fmt.Println("outside loop")
 
 	// Veremos o foreach no capítulo de array
 }
