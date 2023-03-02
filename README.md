@@ -106,9 +106,9 @@ It stops Go program execution
 ```
 
 ## Getting started examples
-------------------
+```
 /home/bruno/Documentos/go -> folder(could be any folder) where I put my getting started examples
 
 cd /home/bruno/Documentos/go && code .
 Commands to Open the getting started examples in the VS CODE
-------------------
+```
