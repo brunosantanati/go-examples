@@ -1,7 +1,8 @@
 # Course [Go (Golang): Explorando a Linguagem do Google](https://www.udemy.com/course/curso-go/)  
 
-## Links
-[Documentation](https://go.dev/doc/code)
+## Links  
+[Documentation](https://go.dev/doc/code)  
+[Golang Pointers - Fully Understanding Pointers in Go](https://www.youtube.com/watch?v=XOz_Xu5WanQ)  
 
 ## Linux Installation
 ```
